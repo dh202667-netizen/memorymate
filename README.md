@@ -1,55 +1,21 @@
 # 忆伴 MemoryMate · v0.3.0 Demo
 
-交给其他 AI 或开发者时，先读 [接手入口](START_HERE.md) 和 [开发交接说明](docs/10-开发交接说明.md)。应用源码位于 `mobile/`，可直接克隆[公开源码仓库](https://github.com/dh202667-netizen/memorymate)。[云端构建检查](https://github.com/dh202667-netizen/memorymate/actions/workflows/build.yml)提供可下载的网页构建产物。
+## 在线体验
+
+- **[立即打开忆伴网页版](https://dh202667-netizen.github.io/memorymate/)**。手机和电脑都可以直接体验。
+- [下载 Android 安装包](https://github.com/dh202667-netizen/dh202667-netizen.github.io/releases/download/v0.3.0/MemoryMate-v0.3.0-android.apk)。适用于 ARM64 安卓设备。
+
+进入网页版后，点击「开启温暖陪伴」，阅读演示说明，再选择长辈或家属身份。也可以点击「注册体验家庭」创建演示资料。
 
 面向长辈与家属的认知健康活动、家庭记忆和日常陪伴原型。技术栈：**uni-app + Vue 3 Composition API + TypeScript**。
 
 当前已经实现完整的双模式本地体验流程。38 个页面均有实际内容；不再使用通用占位页面。所有业务使用同一个 Mock 仓库和设备本地存储，不连接真实认证、数据库或大模型。
 
-公网演示地址：**https://dh202667-netizen.github.io/memorymate/** 。已完成静态发布、HTTPS检查，用户已在微信内确认可打开。启动页可以直接进入“注册体验家庭”，填写姓名与家庭名称后选择身份；这是当前设备中的演示注册。发布与APK状态见 [发布记录](docs/09-Demo发布与Android打包记录.md)。
-
 2026年11月17日已完成适老化UI更新：至少16px文字、暖色与高对比度、可关闭的延长提示、点选散步时长，以及分别对应春节、钢琴比赛和秋游的三张示例照片。旧占位图自动兼容，用户上传图片保留。改版内容与实际验收见 [UI改版记录](docs/07-适老化UI改版.md)，图片来源与提示词见 [素材说明](docs/08-示例图片说明.md)。
 
-## 运行
+## 接手开发
 
-本机可双击项目根目录的 **`启动忆伴.cmd`**：服务未启动时启动并打开浏览器，已经运行时直接打开原地址。预览期间保持启动窗口打开；关闭窗口或重启电脑后需要再次启动。`127.0.0.1:5173` 是本机预览地址，服务停止后该链接无法打开。
-
-```powershell
-cd D:\elderly\mobile
-npm ci
-npm run dev:h5
-```
-
-打开 http://127.0.0.1:5173/ ：开启温暖陪伴 → 勾选演示说明 → 进入演示家庭 → 选择长辈或家属。也可创建本地演示家庭，或继续上次体验。
-
-```powershell
-npm run check
-npm run build:h5
-npm run build:app
-```
-
-H5 产物位于 `mobile/dist/build/h5`；App 资源位于 `mobile/dist/build/app`。App 资源不是 APK。
-
-## Android 手机运行
-
-本机已安装 HBuilderX 的官方 `launcher`、`launcher-tools` 插件和 Android 调试基座。工程 DCloud 包统一锁定为 `3.0.0-5020620260917001`（编译器 5.26），与当前基座匹配。
-
-1. 手机开启开发者选项和 USB 调试，通过 USB 连接，在手机上允许电脑调试。
-2. 进入 `mobile` 后运行：
-
-```powershell
-.\scripts\run-android.ps1
-```
-
-脚本自动选择第一台已授权设备；多设备时可传 `-DeviceId`。HBuilderX 不在默认目录时传 `-HBuilderPath`。仅检查 Android 调试编译：
-
-```powershell
-.\scripts\run-android.ps1 -CompileOnly
-```
-
-默认目录为 `D:\HBuilderX\HBuilderX.5.26.2026091802\HBuilderX`。也可在 HBuilderX 导入 CLI 项目根 `mobile`，选择运行到 Android App 标准基座。
-
-独立APK已生成：`releases/MemoryMate-v0.3.0-android.apk`，约24.7MB，包名 `com.memorymate.demo`，版本0.3.0（300），支持arm64-v8a。可从 [官方打包下载地址](https://app.liuyingyong.cn/build/download/ee016780-e27c-11f1-baf7-d3381d339147) 获取。包名、版本、签名和资源已核对，本轮未连接设备，尚未完成这份APK的安装实测。此前v0.2在 **REDMI K80 Ultra / Android 16** 官方基座中的记录见 [v0.2验收记录](docs/06-v0.2-实现与验收.md)，不能代替本次APK实测。
+应用源码位于 `mobile/`。换电脑、用 AI 接手或在浏览器开发，请先看[接手指南](START_HERE.md)。签名 APK 的核验和真机测试状态见[发布记录](docs/09-Demo发布与Android打包记录.md)。
 
 ## 已实现
 
@@ -121,7 +87,7 @@ elderly/
 
 ## 验证与继续开发
 
-类型、路由与构建使用上述命令检查。场景验收脚本位于 `mobile/scripts/qa/`，通过 Playwright CLI 驱动真实浏览器/已连接的Android WebView，未引入测试运行时到APP依赖。详细结果、设备范围与未覆盖项见验收记录。
+[云端构建检查](https://github.com/dh202667-netizen/memorymate/actions/workflows/build.yml)包括类型、路由和构建验证，并提供可下载的网页构建产物。场景验收脚本位于 `mobile/scripts/qa/`，详细结果、设备范围与未覆盖项见[开发交接说明](docs/10-开发交接说明.md)。
 
 新增页面先编写业务页面，再登记 `src/config/routes.json`，运行 `npm run pages:generate`。生成器同步路由并检查实体，不会批量制造空页。公共视觉维护在 `styles/` 和 `components/`。
 

@@ -7,7 +7,7 @@ $stamp = Get-Date -Format 'yyyyMMdd-HHmmss-fff'
 $stageRoot = Join-Path $root "output\handoff-$stamp"
 $sourceStage = Join-Path $stageRoot 'source\MemoryMate'
 $fullStage = Join-Path $stageRoot 'full\MemoryMate'
-$sourceFiles = @('README.md','START_HERE.md','NEXT_AI_PROMPT.md','AGENTS.md','.gitignore','启动忆伴.cmd',
+$sourceFiles = @('README.md','START_HERE.md','NEXT_AI_PROMPT.md','AGENTS.md','.gitignore',
   '.github/workflows/build.yml','.devcontainer/devcontainer.json',
   'publish/deployment.json',
   'releases/MemoryMate-v0.3.0-verification.json','releases/SHA256SUMS.txt')
