@@ -1,0 +1,186 @@
+@use './tokens.scss';
+page {
+  background: var(--mm-bg);
+  color: var(--mm-ink);
+  font-family:
+    'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', 'Heiti SC', 'SimHei', sans-serif;
+}
+view,
+button,
+input,
+textarea,
+text,
+uni-view,
+uni-button,
+uni-text {
+  box-sizing: border-box;
+}
+// H5 lazily injects uni-button defaults; role raises specificity above that sheet.
+button[role] {
+  margin: 0;
+  font-family: inherit;
+  line-height: 1.5;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  border-radius: 8px;
+  min-height: 48px;
+  touch-action: manipulation;
+}
+button[role]::after {
+  border: 0;
+  pointer-events: none;
+}
+button:focus-visible,
+uni-button:focus-visible {
+  outline: 3px solid var(--mm-brand);
+  outline-offset: 3px;
+}
+button[disabled],
+uni-button[disabled] {
+  opacity: 1;
+  cursor: not-allowed;
+}
+image {
+  display: block;
+}
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.between {
+  justify-content: space-between;
+}
+.card,
+button.card {
+  padding: 20px;
+  border: 1px solid var(--mm-border);
+  background: var(--mm-surface);
+  border-radius: 16px;
+}
+button.card {
+  border-radius: 8px;
+}
+.muted {
+  color: var(--mm-muted);
+  font-size: calc(16px * var(--font-scale, 1));
+  line-height: 1.65;
+}
+.eyebrow {
+  font-size: calc(16px * var(--font-scale, 1));
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--mm-muted);
+}
+.page-title {
+  font-size: calc(28px * var(--font-scale, 1));
+  font-weight: 650;
+  line-height: 1.4;
+  letter-spacing: -0.7px;
+}
+.text-action {
+  min-height: 48px;
+  color: var(--mm-brand);
+  font-size: calc(16px * var(--font-scale, 1));
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-align: left;
+}
+.icon-tile {
+  width: 52px;
+  height: 52px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.green,
+button.green {
+  background: var(--mm-green);
+}
+.amber,
+button.amber,
+.blue,
+button.blue {
+  background: var(--mm-amber);
+}
+.peach,
+button.peach {
+  background: var(--mm-peach);
+}
+.prototype-note {
+  font-size: calc(16px * var(--font-scale, 1));
+  line-height: 1.7;
+  color: var(--mm-muted);
+  text-align: center;
+  padding: 4px 12px;
+}
+.list-button,
+button.list-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-align: left;
+  min-height: 66px;
+  padding: 12px 0;
+}
+.list-button + .list-button {
+  border-top: 1px solid var(--mm-border);
+}
+.list-label {
+  flex: 1;
+  font-size: calc(18px * var(--font-scale, 1));
+}
+.voice-toggle {
+  min-width: 76px;
+  min-height: 48px;
+  margin-left: 12px;
+  border-radius: 8px;
+  background: var(--mm-green);
+  color: var(--mm-brand);
+  font-size: calc(16px * var(--font-scale, 1));
+  flex-shrink: 0;
+}
+.photo-caption {
+  display: block;
+  color: var(--mm-muted);
+  font-size: calc(16px * var(--font-scale, 1));
+  line-height: 1.6;
+  margin-top: 8px;
+}
+.app-layout button {
+  overflow-wrap: anywhere;
+}
+.row > view,
+.section-heading > view {
+  min-width: 0;
+}
+@media (max-width: 420px) {
+  .app-layout.font-extra .quick-actions,
+  .app-layout.font-extra .family-actions,
+  .app-layout.font-extra .shortcut-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .app-layout.font-extra .members {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .app-layout.font-extra .section-heading {
+    flex-wrap: wrap;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+    transition: none !important;
+    animation: none !important;
+  }
+}

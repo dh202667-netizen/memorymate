@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-11-17T12:56:11.6107754Z",
+  "cleanInstall": true,
+  "routeAndTypeCheck": true,
+  "h5Build": true,
+  "appResourceBuild": true,
+  "webPreparation": true,
+  "githubExportPreparation": true,
+  "applicationInputHashesMatched": 174,
+  "rebuiltWebFilesMatched": 129,
+  "cloudBuildSubmitted": false,
+  "websiteRepublished": false,
+  "physicalApkTested": false,
+  "credentialFeatureScan": "enforced by create-handoff.ps1",
+  "fullHistoricalUiSuiteRerun": false
+}

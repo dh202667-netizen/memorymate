@@ -1,0 +1,20 @@
+{
+  "bytes": 24680643,
+  "package": "com.memorymate.demo",
+  "version": "0.3.0",
+  "sha256": "d218546788e7059751d5db44c29c93f568c4706397724e4f7ff0fa7bd1547dc0",
+  "versionCode": 300,
+  "minSdk": 21,
+  "signatureSchemes": [
+    "v1",
+    "v2"
+  ],
+  "download": "https://app.liuyingyong.cn/build/download/ee016780-e27c-11f1-baf7-d3381d339147",
+  "architectures": [
+    "arm64-v8a"
+  ],
+  "signatureVerified": true,
+  "targetSdk": 28,
+  "physicalDeviceTested": false,
+  "label": "忆伴 MemoryMate"
+}

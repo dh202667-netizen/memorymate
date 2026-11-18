@@ -1,0 +1,12 @@
+{
+  "name": "MemoryMate",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:5.2.6-24-bookworm@sha256:72c2f2a9a837cf27a8cad29a6031e48d852a31d1acd716379ee0b4fa543dcfc8",
+  "forwardPorts": [5173],
+  "portsAttributes": {
+    "5173": {
+      "label": "MemoryMate H5",
+      "onAutoForward": "notify"
+    }
+  },
+  "postCreateCommand": "npm ci --prefix mobile --no-audit --no-fund"
+}

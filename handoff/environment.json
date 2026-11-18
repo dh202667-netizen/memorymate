@@ -1,0 +1,9 @@
+{
+  "platform": "Windows",
+  "node": "v24.15.0",
+  "dcloudDependencies": "3.0.0-5020620260917001",
+  "timezone": "Asia/Shanghai",
+  "npm": "11.12.1",
+  "hbuilder": "5.26.2026091802",
+  "dependenciesIncluded": false
+}

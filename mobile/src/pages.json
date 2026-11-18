@@ -1,0 +1,280 @@
+{
+  "pages": [
+    {
+      "path": "pages/welcome/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "忆伴"
+      }
+    },
+    {
+      "path": "pages/auth/login",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "欢迎回家"
+      }
+    },
+    {
+      "path": "pages/auth/register",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "注册体验家庭"
+      }
+    },
+    {
+      "path": "pages/auth/role",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "选择使用方式"
+      }
+    },
+    {
+      "path": "pages/elder/home",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "首页"
+      }
+    },
+    {
+      "path": "pages/memory/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "记忆家园"
+      }
+    },
+    {
+      "path": "pages/memory/people",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "我的家人"
+      }
+    },
+    {
+      "path": "pages/memory/person",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "人物详情"
+      }
+    },
+    {
+      "path": "pages/memory/stories",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "家庭故事"
+      }
+    },
+    {
+      "path": "pages/memory/story",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "故事详情"
+      }
+    },
+    {
+      "path": "pages/memory/relations",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "我们的家庭"
+      }
+    },
+    {
+      "path": "pages/memory/timeline",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "记忆时间轴"
+      }
+    },
+    {
+      "path": "pages/memory/album",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "家庭相册"
+      }
+    },
+    {
+      "path": "pages/training/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "动动脑"
+      }
+    },
+    {
+      "path": "pages/training/detail",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "活动详情"
+      }
+    },
+    {
+      "path": "pages/training/play",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "认知小活动"
+      }
+    },
+    {
+      "path": "pages/training/result",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "本次活动"
+      }
+    },
+    {
+      "path": "pages/training/history",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "活动历史"
+      }
+    },
+    {
+      "path": "pages/companion/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "AI陪伴"
+      }
+    },
+    {
+      "path": "pages/health/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "今日健康任务"
+      }
+    },
+    {
+      "path": "pages/family/home",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "家庭首页"
+      }
+    },
+    {
+      "path": "pages/family/memory",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "记忆管理"
+      }
+    },
+    {
+      "path": "pages/family/person-edit",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "添加或编辑家人"
+      }
+    },
+    {
+      "path": "pages/family/story-edit",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "写一个家庭故事"
+      }
+    },
+    {
+      "path": "pages/family/media-add",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "添加照片与声音"
+      }
+    },
+    {
+      "path": "pages/family/observation",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "健康观察"
+      }
+    },
+    {
+      "path": "pages/family/observation-add",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "记录日常观察"
+      }
+    },
+    {
+      "path": "pages/family/interaction",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "家庭互动"
+      }
+    },
+    {
+      "path": "pages/family/message-add",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "给家人留句话"
+      }
+    },
+    {
+      "path": "pages/family/dates",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "重要的日子"
+      }
+    },
+    {
+      "path": "pages/account/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "我的"
+      }
+    },
+    {
+      "path": "pages/account/profile",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "个人资料"
+      }
+    },
+    {
+      "path": "pages/account/accessibility",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "字体与语音"
+      }
+    },
+    {
+      "path": "pages/account/binding",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "家庭成员绑定"
+      }
+    },
+    {
+      "path": "pages/account/notifications",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "消息设置"
+      }
+    },
+    {
+      "path": "pages/account/privacy",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "隐私与授权"
+      }
+    },
+    {
+      "path": "pages/account/settings",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "APP设置"
+      }
+    },
+    {
+      "path": "pages/messages/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "家人的消息"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#F7F8F2",
+    "backgroundColorTop": "#F7F8F2",
+    "pageOrientation": "portrait",
+    "rpxCalcMaxDeviceWidth": 480,
+    "rpxCalcBaseDeviceWidth": 375,
+    "rpxCalcIncludeWidth": 750
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "product": "MemoryMate",
+  "version": "0.3.0",
+  "sourceControl": {
+    "repository": "https://github.com/dh202667-netizen/memorymate",
+    "visibility": "public",
+    "branch": "main",
+    "buildWorkflow": ".github/workflows/build.yml",
+    "developmentContainer": ".devcontainer/devcontainer.json"
+  },
+  "primary": {
+    "provider": "github-pages",
+    "url": "https://dh202667-netizen.github.io/memorymate/",
+    "repository": "https://github.com/dh202667-netizen/dh202667-netizen.github.io.git",
+    "branch": "main",
+    "publishedCommit": "b6ca8cda3a61babfd62857653bccfaf218a5da04",
+    "sourceDirectory": "publish/github-pages",
+    "rootAndAlias": ["/", "/memorymate/"]
+  },
+  "android": {
+    "dcloudAppId": "__UNI__5CEFF0E",
+    "packageName": "com.memorymate.demo",
+    "certificate": "DCloud managed cloud certificate in owner's account",
+    "releasePage": "https://github.com/dh202667-netizen/dh202667-netizen.github.io/releases/tag/v0.3.0"
+  },
+  "legacySites": {
+    "projectId": "appgprj_6afc1a50afc481919f9cef13732e0964",
+    "url": "https://memorymate.dh2026-6-792150.chatgpt.site",
+    "status": "not-primary-wechat-block-reported"
+  },
+  "containsCredentials": false,
+  "applicationBackend": false
+}

@@ -1,0 +1,42 @@
+{
+  "product": "MemoryMate",
+  "version": "0.3.0",
+  "versionCode": "300",
+  "routeCount": 38,
+  "dataMode": "device-local-mock",
+  "backend": false,
+  "primaryUrl": "https://dh202667-netizen.github.io/memorymate/",
+  "publishedWebCommit": "b6ca8cda3a61babfd62857653bccfaf218a5da04",
+  "dcloudAppId": "__UNI__5CEFF0E",
+  "packageName": "com.memorymate.demo",
+  "apk": {
+    "bytes": 24680643,
+    "package": "com.memorymate.demo",
+    "version": "0.3.0",
+    "sha256": "d218546788e7059751d5db44c29c93f568c4706397724e4f7ff0fa7bd1547dc0",
+    "versionCode": 300,
+    "minSdk": 21,
+    "signatureSchemes": [
+      "v1",
+      "v2"
+    ],
+    "download": "https://app.liuyingyong.cn/build/download/ee016780-e27c-11f1-baf7-d3381d339147",
+    "architectures": [
+      "arm64-v8a"
+    ],
+    "signatureVerified": true,
+    "targetSdk": 28,
+    "physicalDeviceTested": false,
+    "label": "忆伴 MemoryMate"
+  },
+  "accountCredentialsIncluded": false,
+  "signingPrivateKeyIncluded": false,
+  "applicationSource": "mobile/src",
+  "newEnvironmentValidation": "See VALIDATION.md",
+  "historicalEvidence": "handoff/evidence",
+  "handoffNotes": [
+    "The public GitHub repository contains compiled web exports, not original Vue/TypeScript source.",
+    "Do not claim the 0.3.0 APK passed physical-device testing.",
+    "Publishing to existing accounts requires the owner to authorize access."
+  ]
+}

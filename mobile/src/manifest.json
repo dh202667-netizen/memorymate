@@ -1,0 +1,49 @@
+{
+    "name" : "忆伴 MemoryMate",
+    "appid" : "__UNI__5CEFF0E",
+    "description" : "认知活动与家庭记忆陪伴 · 本地数据演示版",
+    "versionName" : "0.3.0",
+    "versionCode" : "300",
+    "transformPx" : false,
+    "vueVersion" : "3",
+    "app-plus" : {
+        "modules" : {
+            "Camera" : {}
+        },
+        "usingComponents" : true,
+        "nvueStyleCompiler" : "uni-app",
+        "compilerVersion" : 3,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : true,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        "distribute" : {
+            "android" : {
+                "permissions" : []
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "resources/android/icon-72.png",
+                    "xxxhdpi" : "resources/android/icon-192.png",
+                    "xxhdpi" : "resources/android/icon-144.png",
+                    "xhdpi" : "resources/android/icon-96.png",
+                    "mdpi" : "resources/android/icon-48.png"
+                }
+            },
+            "ios" : {
+                "dSYMs" : false
+            }
+        }
+    },
+    "h5" : {
+        "title" : "忆伴 MemoryMate",
+        "router" : {
+            "mode" : "hash"
+        }
+    },
+    "uniStatistics" : {
+        "enable" : false
+    }
+}

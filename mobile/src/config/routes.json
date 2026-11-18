@@ -1,0 +1,333 @@
+[
+  {
+    "id": "welcome",
+    "path": "pages/welcome/index",
+    "title": "忆伴",
+    "mode": "public"
+  },
+  {
+    "id": "login",
+    "path": "pages/auth/login",
+    "title": "欢迎回家",
+    "mode": "public"
+  },
+  {
+    "id": "register",
+    "path": "pages/auth/register",
+    "title": "注册体验家庭",
+    "mode": "public",
+    "links": [
+      "login"
+    ]
+  },
+  {
+    "id": "role",
+    "path": "pages/auth/role",
+    "title": "选择使用方式",
+    "mode": "public"
+  },
+  {
+    "id": "elderHome",
+    "path": "pages/elder/home",
+    "title": "首页",
+    "mode": "elder",
+    "tab": true,
+    "icon": "home"
+  },
+  {
+    "id": "memory",
+    "path": "pages/memory/index",
+    "title": "记忆家园",
+    "mode": "elder",
+    "tab": true,
+    "icon": "heart",
+    "links": [
+      "people",
+      "stories",
+      "relations",
+      "timeline",
+      "album"
+    ]
+  },
+  {
+    "id": "people",
+    "path": "pages/memory/people",
+    "title": "我的家人",
+    "mode": "shared",
+    "icon": "people",
+    "links": [
+      "person"
+    ]
+  },
+  {
+    "id": "person",
+    "path": "pages/memory/person",
+    "title": "人物详情",
+    "mode": "shared",
+    "icon": "people",
+    "links": [
+      "stories",
+      "album"
+    ]
+  },
+  {
+    "id": "stories",
+    "path": "pages/memory/stories",
+    "title": "家庭故事",
+    "mode": "shared",
+    "icon": "book",
+    "links": [
+      "story"
+    ]
+  },
+  {
+    "id": "story",
+    "path": "pages/memory/story",
+    "title": "故事详情",
+    "mode": "shared",
+    "icon": "book",
+    "links": [
+      "people"
+    ]
+  },
+  {
+    "id": "relations",
+    "path": "pages/memory/relations",
+    "title": "我们的家庭",
+    "mode": "shared",
+    "icon": "people",
+    "links": [
+      "people"
+    ]
+  },
+  {
+    "id": "timeline",
+    "path": "pages/memory/timeline",
+    "title": "记忆时间轴",
+    "mode": "shared",
+    "icon": "calendar",
+    "links": [
+      "stories"
+    ]
+  },
+  {
+    "id": "album",
+    "path": "pages/memory/album",
+    "title": "家庭相册",
+    "mode": "shared",
+    "icon": "photo"
+  },
+  {
+    "id": "training",
+    "path": "pages/training/index",
+    "title": "动动脑",
+    "mode": "elder",
+    "tab": true,
+    "icon": "brain",
+    "links": [
+      "trainingDetail",
+      "trainingHistory"
+    ]
+  },
+  {
+    "id": "trainingDetail",
+    "path": "pages/training/detail",
+    "title": "活动详情",
+    "mode": "elder",
+    "icon": "brain",
+    "links": [
+      "trainingPlay"
+    ]
+  },
+  {
+    "id": "trainingPlay",
+    "path": "pages/training/play",
+    "title": "认知小活动",
+    "mode": "elder",
+    "icon": "brain"
+  },
+  {
+    "id": "trainingResult",
+    "path": "pages/training/result",
+    "title": "本次活动",
+    "mode": "elder",
+    "icon": "check",
+    "links": [
+      "trainingHistory"
+    ]
+  },
+  {
+    "id": "trainingHistory",
+    "path": "pages/training/history",
+    "title": "活动历史",
+    "mode": "elder",
+    "icon": "calendar"
+  },
+  {
+    "id": "companion",
+    "path": "pages/companion/index",
+    "title": "AI陪伴",
+    "mode": "elder",
+    "tab": true,
+    "icon": "chat",
+    "links": [
+      "stories"
+    ]
+  },
+  {
+    "id": "health",
+    "path": "pages/health/index",
+    "title": "今日健康任务",
+    "mode": "shared",
+    "icon": "leaf"
+  },
+  {
+    "id": "familyHome",
+    "path": "pages/family/home",
+    "title": "家庭首页",
+    "mode": "family",
+    "tab": true,
+    "icon": "home"
+  },
+  {
+    "id": "manageMemory",
+    "path": "pages/family/memory",
+    "title": "记忆管理",
+    "mode": "family",
+    "tab": true,
+    "icon": "photo",
+    "links": [
+      "personEdit",
+      "storyEdit",
+      "mediaAdd",
+      "people",
+      "relations",
+      "timeline"
+    ]
+  },
+  {
+    "id": "personEdit",
+    "path": "pages/family/person-edit",
+    "title": "添加或编辑家人",
+    "mode": "family",
+    "icon": "people"
+  },
+  {
+    "id": "storyEdit",
+    "path": "pages/family/story-edit",
+    "title": "写一个家庭故事",
+    "mode": "family",
+    "icon": "book"
+  },
+  {
+    "id": "mediaAdd",
+    "path": "pages/family/media-add",
+    "title": "添加照片与声音",
+    "mode": "family",
+    "icon": "photo"
+  },
+  {
+    "id": "observation",
+    "path": "pages/family/observation",
+    "title": "健康观察",
+    "mode": "family",
+    "tab": true,
+    "icon": "chart",
+    "links": [
+      "health",
+      "observationAdd"
+    ]
+  },
+  {
+    "id": "observationAdd",
+    "path": "pages/family/observation-add",
+    "title": "记录日常观察",
+    "mode": "family",
+    "icon": "edit"
+  },
+  {
+    "id": "interaction",
+    "path": "pages/family/interaction",
+    "title": "家庭互动",
+    "mode": "family",
+    "tab": true,
+    "icon": "chat",
+    "links": [
+      "messageAdd",
+      "album",
+      "stories",
+      "dates"
+    ]
+  },
+  {
+    "id": "messageAdd",
+    "path": "pages/family/message-add",
+    "title": "给家人留句话",
+    "mode": "family",
+    "icon": "chat"
+  },
+  {
+    "id": "dates",
+    "path": "pages/family/dates",
+    "title": "重要的日子",
+    "mode": "family",
+    "icon": "calendar"
+  },
+  {
+    "id": "account",
+    "path": "pages/account/index",
+    "title": "我的",
+    "mode": "shared",
+    "tab": true,
+    "icon": "user"
+  },
+  {
+    "id": "profile",
+    "path": "pages/account/profile",
+    "title": "个人资料",
+    "mode": "shared",
+    "icon": "user"
+  },
+  {
+    "id": "accessibility",
+    "path": "pages/account/accessibility",
+    "title": "字体与语音",
+    "mode": "shared",
+    "icon": "type"
+  },
+  {
+    "id": "binding",
+    "path": "pages/account/binding",
+    "title": "家庭成员绑定",
+    "mode": "shared",
+    "icon": "people"
+  },
+  {
+    "id": "notifications",
+    "path": "pages/account/notifications",
+    "title": "消息设置",
+    "mode": "shared",
+    "icon": "bell"
+  },
+  {
+    "id": "privacy",
+    "path": "pages/account/privacy",
+    "title": "隐私与授权",
+    "mode": "public",
+    "icon": "shield"
+  },
+  {
+    "id": "settings",
+    "path": "pages/account/settings",
+    "title": "APP设置",
+    "mode": "shared",
+    "icon": "settings"
+  },
+  {
+    "id": "messages",
+    "path": "pages/messages/index",
+    "title": "家人的消息",
+    "mode": "shared",
+    "icon": "bell"
+  }
+]

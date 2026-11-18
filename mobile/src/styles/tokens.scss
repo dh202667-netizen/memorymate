@@ -1,0 +1,17 @@
+:root,
+page {
+  --mm-bg: #fff9ef;
+  --mm-surface: #fffdf8;
+  --mm-brand: #8a481e;
+  --mm-ink: #302d26;
+  --mm-muted: #665e51;
+  --mm-border: #ded3c2;
+  --mm-green: #e8efdf;
+  --mm-amber: #fff0c9;
+  --mm-peach: #fae7d8;
+  --mm-success: #326344;
+  --mm-error: #963c32;
+  --mm-error-bg: #fae8e2;
+  // Compatibility for locally saved task tones from v0.2.
+  --mm-blue: var(--mm-amber);
+}

@@ -1,0 +1,1 @@
+{"module":"integrity","passed":["person deletion removes linked relationship","all stories removed and elder home empty recovery","confirmed reset restores full demo","local registration and profile validation","storage failure keeps data consistent"],"errors":[]}

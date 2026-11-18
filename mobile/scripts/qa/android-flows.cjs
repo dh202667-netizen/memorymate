@@ -1,0 +1,9 @@
+async(page)=>{
+const context=page.context();const passed=[];const errors=[];const watched=new Set();
+async function view(route){for(let i=0;i<100;i++){for(const p of [...context.pages()].reverse()){if(p.isClosed())continue;let title='';try{title=await p.title()}catch{continue}if(title.startsWith(route+'[')){if(!watched.has(p)){watched.add(p);p.on('pageerror',e=>errors.push(e.message))}await p.locator('.app-layout').waitFor();return p}}await new Promise(r=>setTimeout(r,100))}throw new Error('Missing Android view '+route)}
+let active=await view('pages/training/index');const click=(p,name)=>p.getByRole('button',{name,exact:true}).click();
+for(const [name,route] of [['首页','pages/elder/home'],['记忆家园','pages/memory/index'],['AI陪伴','pages/companion/index'],['我的','pages/account/index'],['动动脑','pages/training/index']]){await active.getByRole('navigation').getByRole('button',{name,exact:true}).click();active=await view(route)}passed.push('elder five native navigation entries');
+await active.getByRole('button').filter({hasText:'注意力'}).filter({hasText:'3 道小题'}).click();active=await view('pages/training/detail');await click(active,'开始活动');active=await view('pages/training/play');await active.locator('.answer-option').first().waitFor();for(const [i,answer] of [2,1,1].entries()){await active.locator('.answer-option').nth(answer).click();await click(active,'确认答案');await click(active,i===2?'查看本次结果':'下一题')};active=await view('pages/training/result');await active.getByText('3 / 3 题答对',{exact:false}).waitFor();passed.push('native attention quiz, feedback and result');await click(active,'查看活动历史');active=await view('pages/training/history');await active.locator('.history-item').first().waitFor();passed.push('native training history');
+// Root navigation is reached through the Android Back button between CLI phases.
+return{platform:'Android 16 / REDMI K80 Ultra',passed,errors,currentTitle:await active.title()}
+}
